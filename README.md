@@ -81,4 +81,4 @@ or
 If using Git, run:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_LINK
+https://github.com/zbukar200-web/application-processing-pipeline.git
