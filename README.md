@@ -1,84 +1,40 @@
 # Application Processing Pipeline
 
-## Assignment Overview
-This project is a mini **Application Processing Pipeline** built in Python for a data structures practice task.
-
-The program simulates how startup applications move through a simple approval system using:
-
-- a **Queue (FIFO – First In, First Out)** for incoming applications
-- a **Stack (LIFO – Last In, First Out)** for tracking processed applications
-
-It also demonstrates how the most recent approval can be reversed if a mistake occurs.
+**Author:** Zainab Abdullahi Usman  
+**Course:** COS 202 - Computer Programming II
+**GitHub Repository:** [https://github.com/zbukar200-web/application-processing-pipeline](https://github.com/zbukar200-web/application-processing-pipeline)
 
 
+## Project Overview
 
-## What the App Does
+This is a Python mini-project designed as a **student assignment** to demonstrate basic **data structures** concepts:
 
-This Python program performs the following steps:
+- **Queue (FIFO)**: Used to process applications in the order they are received.  
+- **Stack (LIFO)**: Used to track processed applications and demonstrate undoing the last action.  
 
-1. Imports `deque` from Python’s `collections` module
-2. Creates:
-   - an empty queue called `application_inbox`
-   - an empty stack called `processed_history`
-3. Stores a list of 4 messy startup names:
-   - `" TechCorp "`
-   - `"bio-gen"`
-   - `"  GreenSpark  "`
-   - `"AI Nexus "`
-4. Cleans each startup name by:
-   - removing extra spaces using `.strip()`
-   - converting text to lowercase using `.lower()`
-5. Adds the cleaned names into the queue
-6. Processes the applications in **FIFO order** using `popleft()`
-7. Prints each approved application
-8. Stores approved applications in the stack
-9. Simulates an error by removing the most recent approval using `pop()`
-10. Prints which application was reverted
+The application simulates a **startup application processing pipeline**, where messy application names are cleaned, processed, and can be reverted if needed.
 
-In simple terms, the app shows how a real system can:
-- receive applications in order,
-- process them one by one,
-- and undo the latest action if a mistake happens.
+## Features
 
+1. Cleans messy startup names (trims whitespace and converts to lowercase).  
+2. Processes applications in **First-In-First-Out (FIFO)** order using a queue.  
+3. Keeps a history of processed applications in a **stack**.  
+4. Demonstrates undoing the last processed application (**Last-In-First-Out, LIFO**).  
 
-## Concepts Demonstrated
+## How to Run Locally
 
-This project demonstrates:
-
-- `deque` from `collections`
-- Queue operations:
-  - `append()`
-  - `popleft()`
-- Stack operations:
-  - `append()`
-  - `pop()`
-- String cleaning:
-  - `.strip()`
-  - `.lower()`
-- `for` loops
-- `while` loops
-- Conditional statements (`if`)
-- Basic Python data structure workflow
-
-
-## Project Files
-
-- `app_pipeline.py` → Main Python program
-- `README.md` → Project documentation and beginner-friendly instructions
-
-
-## How to Run the App Locally (Beginner Friendly)
-
-Follow these steps carefully:
-
-### Step 1: Download the project
-You can either:
-
-- **Download the ZIP file** from GitHub  
-or
-- **Clone the repository** using Git
-
-If using Git, run:
+1. Make sure you have **Python 3.x** installed.  
+2. Open your terminal or command prompt and navigate to the project folder.  
+3. Run the Python application:
 
 ```bash
-https://github.com/zbukar200-web/application-processing-pipeline.git
+python app_pipeline.py
+
+
+
+
+
+
+
+
+
